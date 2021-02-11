@@ -16,7 +16,20 @@
         
 
 
-        
+        var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbzh60-N-3Swym0tos_buwP8oHl2Vo1HS8e9hgf8rKawVz-C389WnY7YRw/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
     </script>
 
 
@@ -1686,7 +1699,7 @@
         <DIV id="reviewform"  STYLE="display:none; width: 1000px;">To add a review fill in the bill number we gave you after
             the transaction.<br />
             
-            <form action="" method="GET" style="width: 1000px;">
+            <form action="https://script.google.com/macros/s/AKfycbzh60-N-3Swym0tos_buwP8oHl2Vo1HS8e9hgf8rKawVz-C389WnY7YRw/exec" method="GET" style="width: 1000px;">
                 <p>Bill Number:<i style="color:red">*</i> <input type="text" name="billnumber" required></p>
                 <p>Your thoughts on our service.If you liked our work then could you also put <br />
                     a link to the website we made.<br /> <textarea name="thoughts" id="thoughts" cols="70" rows="6"  ></textarea></p>
@@ -1734,7 +1747,7 @@
         <div style="width: 1100px;">    USING FORM <button id="b7" class="rm"  onclick="togglediv('contform')" type="button" style="position: relative; top: 7px;"><img src="plus.png" alt="plussign" width="40px"></BUTTON>
                 <DIV id="contform"  STYLE="display:none;padding-left: 20px; padding-bottom: 25px;">
                 
-                    <form action="" method="GET" style="width: 1000px;" class="contactform">
+                    <form action="https://script.google.com/macros/s/AKfycbzh60-N-3Swym0tos_buwP8oHl2Vo1HS8e9hgf8rKawVz-C389WnY7YRw/exec" method="GET" style="width: 1000px;" class="contactform">
                        <p>Choose one of the following:</p>
                        <input type="radio" id="basic" name="webtype" value="basic">
                        <label for="basic">Basic Website</label><br>
