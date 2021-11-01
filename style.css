@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+}
+header{
+    background-image: linear-gradient(to right, #314097ff , #2c347c98);
+    height: 700px;
+   
+}
+.outer_navbar{
+    display: flex;
+  justify-content: center;
+}
+.inner_navbar{
+    z-index: 50;
+    width: 1220px;
+    display: flex;
+  justify-content: space-between;
+  border-bottom: solid #b3b3b3ff 1px;
+}
+.menu ul{
+    list-style: none;
+    display: inline-flex;
+    text-decoration: none;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ccccccff;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu a:hover{
+    color: white;
+    cursor: pointer;
+}
+.menu .active{
+         color: white;
+}
+.logo img{
+    margin-top: 18px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+.menu{
+    margin-right: 35px;
+    margin-top: 15px;
+}
+
+.animation_outer{
+    display: flex;
+    justify-content: center;
+  }
+
+.animation_inner{
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+.build_animation{
+    position: relative;
+    top: -100px;
+}
+
+.crane_down{
+    animation: crane 3.9s infinite;
+    animation-delay: 0s;
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  @keyframes crane {
+    
+    100% {transform: translateY(15px);}
+    
+      }
+
+      .crane_bars{
+        animation: cranes 3.9s infinite;
+        animation-delay: 0s;
+        
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+      }
+      @keyframes cranes {
+        
+        100% {transform: translateY(5px);}
+        
+          }
+
+      .build_text{
+        animation: build 3.9s infinite;
+        animation-delay: 0s;
+        
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+      }
+      @keyframes  build{
+        
+        100% {transform: translateY(12px);}
+        
+          }      
+
+          .websites{
+            fill: #ffffff00;
+            animation-name: websites;
+            animation-duration: 0.7s;
+            animation-delay: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+          }
+          @keyframes websites {
+            from {fill: #ffffff00;}
+            to {fill: white;}
+          
+          }    
+
+          .web_image{
+            stroke: #ffffff00;
+            animation: webimage 0.7s infinite;
+            animation-delay: 5s;
+            
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+          @keyframes  webimage{
+            
+            from {transform: translateX(12px);stroke: #ffffff00;}
+            to {transform: translateX(0px);stroke: white;}
+            
+              } 
+
+              .web_text{
+                stroke: #ffffff00;
+                animation: webtext 0.7s infinite;
+                animation-delay: 4.5s;
+                
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+              }
+              @keyframes  webtext{
+                
+                from {transform: translateX(-12px);stroke: #ffffff00;}
+                to {transform: translateX(0px);stroke: white;}
+                
+                  } 
+
+                  .torch{
+                    fill: #ffffff00;
+                    animation-name: torchlight;
+                    animation-duration: 0.7s;
+                    animation-delay: 5.5s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                  }
+                  @keyframes torchlight {
+                    from {fill: #ffffff00;}
+                    to {fill: #97b5fc;}
+                  
+                  }   
+                
+
+                  .torch_source{
+                    fill: #ffffff00;
+                    animation-name: torchsource;
+                    animation-duration: 0.7s;
+                    animation-delay: 5.5s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                  }
+                  @keyframes torchsource{
+                    from {fill: #ffffff00;}
+                    to {fill: white;}
+                  
+                  }  
+
+                  .jfu{
+                    fill: #ffffff00;
+                    animation-name: justfu;
+                    animation-duration: 0.7s;
+                    animation-delay: 5.5s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                  }
+                  @keyframes justfu {
+                    from {fill: #ffffff00;}
+                    to {fill: white;}
+                  
+                  }   
